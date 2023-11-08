@@ -1,0 +1,10 @@
+<div class="tiff-list">
+	<div
+		*ngFor="let item of list"
+		class="tiff-option"
+		[ngClass]="{ active: activeValue === item.value }"
+    (click)="dian(item.value)"
+	>
+		{{ item.name }}
+	</div>
+</div>
